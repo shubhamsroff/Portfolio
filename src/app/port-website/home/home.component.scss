@@ -1,0 +1,100 @@
+.home-container{
+    text-align: center;
+    padding:50px;
+    background-color: #c1ecff;
+    font-family: "Lobster",sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+
+.thumb-container{
+    overflow: hidden;
+    border-radius: px;
+}
+.thumb-image{
+    width:600px;
+    height:300px;
+    object-fit:cover;
+}
+
+.image-container{
+    flex:1;
+}
+.image-container img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-container{
+    flex:2;
+    padding: 0 20px;
+}
+.text-container h1{
+    font-size:2.5em;
+    color:#333;
+}
+
+.text-container p{
+    font-size:1.2em;
+    color:#555;
+}
+
+.animate_fadeInLeft{
+    animation-name:fadeInLeft;
+}
+.profile-image{
+    width:300px;
+    height:300px;
+}
+
+.align-items-center{
+    justify-content: center;
+    text-align: center;
+}
+.shubh{
+    margin-top: -50px;
+}
+.container-max{
+    display: inline-block;
+
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: "Lobstar",sans-serif;
+    font-weight:400;
+    font-style:normal;
+}
+.max-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-family: "Lobstar",sans-serif;
+    font-weight:400;
+    font-style:normal;
+}
+
+.example-card{
+    max-width:300px;
+    background-size: cover;
+    transition: transform 0.6 ease;
+}
+.example-card:hover{
+    transform: sacle(1.05);
+    cursor:pointer;
+}
+
+.example-header-image{
+    background-size: cover;
+}
+
+button{
+    background-color: #6b08a6;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
