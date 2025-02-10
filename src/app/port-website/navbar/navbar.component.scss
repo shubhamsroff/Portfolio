@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #6b08a6;
+    background-color: #4e647e;
     color:#fff;
     font-family: "Lobster",sans-serif;
     font-size: 20px;
@@ -12,10 +12,11 @@
     margin-left: -15px;
 }
 
+
 .nav-link{
         list-style: none;
         display: flex;
-      
+        cursor: pointer;
         // margin-left:900px;
 }
 .first{
