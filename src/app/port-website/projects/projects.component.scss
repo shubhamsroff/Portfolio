@@ -1,20 +1,106 @@
-.projects-section{
-    margin-left: 30px;
+/* General styles */
+.projects-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+/* Container to hold projects */
+.projects-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    color: #3c76c7;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Project Card */
+.project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Name */
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(135, 109, 122);
+    margin-bottom: 10px;
+}
+
+/* Technology */
+.technology {
     font-size: 18px;
+    color: rgb(96, 138, 201);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    color: #444;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .projects-container {
+        max-width: 95%;
     }
 
-    .name{
-        font-size: 28px;
-        color: rgb(135, 109, 122);
+    .project-card {
+        max-width: 80%;
     }
-    .description-class{
-        margin-left: 100px !important;
-        color: rgb(96, 138, 201);
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 90%;
+        padding: 18px;
     }
 
-    .part{
-        margin-left: 200px;
+    .name {
+        font-size: 20px;
     }
-    .next{
-        margin-left: 90px;
+
+    .technology, .description {
+        font-size: 16px;
     }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .technology, .description {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}

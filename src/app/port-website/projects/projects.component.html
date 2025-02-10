@@ -1,17 +1,13 @@
 <!-- <app-navbar></app-navbar> -->
 
-<div  class="projects-section" *ngIf="showProjects">
-    <div id="project-skill">
-        <div class="card-container" id="project-selector"
-            class="skills-section animate_animated animate-fadeInUp">
-            <p style="font-size:25px; color:#3c76c7; text-align: center;margin-top:30px;">Projects</p>
-        </div>
+<div class="projects-section" *ngIf="showProjects" id="project-selector">
+    <div class="projects-container">
+        <h2 class="title">Projects</h2>
+        
         <div class="project-card" *ngFor="let project of projects">
-            <h4 class="name">{{project.name}}</h4>
-            <h3 class="description-class"><strong>Technology:- <p class="next">{{project.technology}}</p></strong></h3>
-            
-            <h3 class="description-class"><strong>Description:-</strong></h3>
-            <p class="part">{{project.description}}</p>
+            <h3 class="name">{{ project.name }}</h3>
+            <p class="technology"><strong>Technology:</strong> {{ project.technology }}</p>
+            <p class="description"><strong>Description:</strong> {{ project.description }}</p>
         </div>
     </div>
 </div>
