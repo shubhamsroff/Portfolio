@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/h",
+    "/port-website",
+    "/port-website/about-us",
+    "/port-website/contact",
+    "/port-website/experience",
+    "/port-website/footer",
+    "/port-website/home",
+    "/port-website/navbar",
+    "/port-website/projects"
+  ]
+}
